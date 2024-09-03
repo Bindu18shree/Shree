@@ -38,27 +38,27 @@ class MicroWaveOven{
 	
 	
 	
-	public static String getBrand(String ovenBrand ){
+	public static String getBrand( ){
 		return brand;
 	}
 	
-	public static int getPrice(int ovenPrice ){
+	public static int getPrice( ){
 		return price;
 	}
 	
-	public static float getWeight(float ovenWeight){
+	public static float getWeight(){
 		return weight;
 	}
 	
-	public static String getDimensions(String ovenDimensions){
+	public static String getDimensions(){
 		return dimensions;
 	}
 	
-	public static int getCapacity(int ovenCapacity){
+	public static int getCapacity(){
 		return capacity;
 	}
 	
-	public static int getWattage(int ovenWattage){
+	public static int getWattage(){
 		return wattage;
 	}
 	
