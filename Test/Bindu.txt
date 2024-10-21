@@ -1,0 +1,285 @@
+ Question 1) ans:
+
+Main method is declared as : 
+
+public static void main(String [] args){
+	
+	
+}
+
+Main method consists of modifier(access specifier), static keyword(non-access specifier), returntype, methodName, dataType String, array symbol and args(arguments).
+
+Main method is public modifier because JVM search for main method while executing and since public is accessible in all the packages and class, it is public modifier.
+
+Main method is in static because we cannot create the instance of a main method. 
+
+Return type is void since main methos should not return us anything.
+
+String data type is used because it can store sequence of characters.
+
+[] is because it can store n number of values of same data type.
+
+args is the arguments and it is not constant, but it is used as the industrial standards.
+
+
+Question 2) ans:
+
+JDK is the java development kit. JRE is the java Runtime environment which is the part of jdk and JVM is the Java Virtual Machine which is the part of JRE. 
+
+
+Question 3) ans:
+
+Primitive Data Types:
+
+Primitive data types are the pre-defined data types and also have default values when not initialised.
+
+There are 8 different types in primitive data type :
+
+1.int - stores the wholenumbers(-2^31 to 2^31-1).
+2.char - stores a single character.
+3.float - stores decimals (upto 7 digits).
+4.double - stores decimals (upto 16 digits).
+5.long - stores the wholenumbers(-2^62 to 2^62-1).
+6.short - stores wholenumbers(-32,728 to 32,727).
+7.byte - stores wholenumbers(-128 to 127).
+8.boolean - stores only true or false.
+
+Non-Primitive Data types:
+
+Non- primitive data types are the data types which are user defined.
+
+Types:
+
+1.Array
+2.String
+3.Object(className)
+4.etc
+
+
+Question 4) ans:
+
+Access specifiers are the modifiers which restricts access only to the particular things to access 
+
+
+There are 4 types of access specifiers,namely:
+
+1) public - public is the access specifier which allows to access things in different classes and different packages.
+
+2) private - private is the access specifier which restricts to access the things inside the class only. It does not allow to access the things outside the class.
+
+3) protected - protected is the access specifier which restricts to access things in different class by inheritance concept or by instance creation of a class. It does also allows to access things in different packages through means of inheritance concept.
+
+4) default - default is the access specifier which allows to access things only within a package of different classes by inheritance concept or instance creation of a class.
+
+
+Question 5) ans:
+
+static variable:
+
+static variable is also called as class variable which is declared outside the method and inside of the class.Static variable is declared by the use of static keyword.
+
+declaration:  staticKeyword datatype referenceName;
+                                  
+		  ex: static int number;
+							
+Initialization : staticKeyword datatype referenceName = value;
+ 
+          ex: static int number = 3;
+		  
+		  
+instance variable is a classlevel or global level variable which is declared without the static keyword.
+
+declaration : datatype referenceName;
+
+           ex : long contactNumber ;
+		   
+Initialization : datatype referenceName = value;
+
+           ex : long contactNumber = 987542678l;
+		   
+		   
+Question 7) ans :
+
+class consists of states and behaviors where states are variables and behaviors are methods and functions.
+Methods are the functionalities of the class. There are 2 types of methods:
+
+Static method 
+
+
+		   
+		   
+
+		   
+
+Question 8) ans:
+
+Object is the superclass of every class in Java.
+
+modifiers & returntype                          methods
+				
+protected Object				                clone();
+                                                
+boolean                                         equals(Object obj);
+                                                checks whether if other class is equals to this one.
+
+protected void                                  finalize();
+
+int                                             hashCode();
+                                                 returns the hashcode value of the object.
+
+String                                          toString();
+                                                returns the string representation for the Object.
+												
+
+void                                            notify();
+
+void                                            notifyAll();
+
+void                                            wait();
+
+void                                            wait(long timeOut);
+
+void                                            wait(long timeOut, int nanos);
+
+class<?>                                        getClass();
+
+
+
+Question 9) ans:
+
+
+
+Question 10) ans :
+
+a) error : main method not found.
+
+b) error : <identifer> expected.
+
+c) error : <identifier> expected and illegal start of expression.
+
+
+
+Question 11) ans:
+
+Inheritance is one of the fundamental concepts of OOPS. Inheritance is the concept where the other class inherits the properties of particular class.
+The class which inherits the properties is calles subclass(child class) and the class from which the properties are inherited is called superclass(parentclass).
+
+There are 5 types of inheritance :
+
+Single inheritance: The single inheritance is the inheritance where the single child class has inherited the properties from single parent class.
+Ex: Dog is inherited from Animal
+
+Multi-Level inheritance : One class is inherited from other class and another class is inherited from the derived class.
+Ex: Daughter is inherited from Mother and Mother is inherited from GrandMother.
+
+Heirarchial inheritance : Multiple subclasses(childclass) are derived from the single Superclass(Parentclass).
+Ex: Son, Daughter is inherited from Father.
+
+It does promote reusability by inheriting properties from the parent class and those properties can be used or accessed in the childclass. 
+
+
+
+Question 12) ans:
+
+Constructor is a special method because the name of the method and the class will be same and it does not have any return type.
+
+There are 3 types of constructor:
+
+1. Default constructor
+
+2. No-argumental constructor
+
+3. Argumental Constructor
+
+
+
+Question 13) ans :
+
+this is the keyword use to differnetiate between local variables and instance variables.
+this() is used call the constructor of the same class.
+
+super is the keyword used to access the variables from parentclass to child class.
+super() is used to call the constructor of parent class in the child class.
+
+
+
+Questtion 16) ans:
+
+abstract
+assert
+boolean
+byte
+break
+short
+long
+int
+interface
+if
+implements
+import
+char
+catch
+class
+continue
+default
+do
+while
+float
+enum
+extends
+switch
+super
+this
+double
+else
+final
+finally
+for
+native
+new
+public
+private
+protected
+return
+try
+volatile
+
+
+Question 12) ans:
+// Question 12) constructor chain linking
+
+class Movie{
+	
+	String nameOfTheMovie;
+	int noOfLeadingActors;
+	
+	public Movie(){
+	    this("Kalki");
+	    System.out.println("This is no argumenatl constructor");
+	
+	}
+	
+	public Movie(String nameOfTheMovie){
+		this("Kalki", 2);
+		System.out.println("Movie name :" +nameOfTheMovie);
+		
+	}
+	
+	public Movie(String nameOfTheMovie, int noOfLeadingActors){
+		System.out.println("Number of leading actors :" +noOfLeadingActors);
+	}
+}
+
+class MovieRunner{
+	
+	public static void main(String [] args){
+		
+		Movie movie = new Movie();
+	
+	}
+
+}
+
+ 
+
+
